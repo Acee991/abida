@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abida Bondou9 - Professional Portfolio</title>
+    <style>
+        :root {
+            --primary: #F4F4F4; /* Concrete Grey */
+            --secondary: #2C3E50; /* Navy Blue */
+            --accent: #F1C40F; /* Safety Yellow */
+            --text: #333;
+            --white: #fff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--secondary);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            color: var(--white);
+            font-weight: bold;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 90vh;
+            padding: 2rem;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+        }
+
+        .hero-text h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #555;
+            max-width: 600px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+            border: 2px solid var(--secondary);
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        /* Image Styling */
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border: 5px solid var(--white);
+        }
+
+        /* Stats Grid */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            background: var(--white);
+            padding: 1rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: var(--shadow);
+            border-radius: 4px;
+        }
+
+        .stat-box h3 {
+            font-size: 0.9rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-box p {
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        /* Skills Section */
+        .skills-section {
+            background: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 500;
+            color: var(--secondary);
+            border: 1px solid #ddd;
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: var(--secondary);
+            color: var(--white);
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #222;
+            color: #888;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 2.5rem; }
+            .hero { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ABIDA BONDOU9</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="about">
+        <div class="hero-text">
+            <h1>Abida Bondou9</h1>
+            <h2>Mechanics Expert & Digital Architect</h2>
+            <p class="bio">
+                I possess a unique blend of precision engineering and digital creativity.
+                With a <strong>BAC+3 in Mechanics</strong>, I have honed my ability to analyze complex systems—whether they are heavy machinery on a construction site or intricate build mechanics in <strong>League of Legends</strong>.
+            </p>
+            <p class="bio">
+                I am a polyglot fluent in Arabic, French, German, English, Italian, and local dialects.
+                My eye for detail is unmatched—my laser-sharp vision allows me to spot the perfect skin or a structural flaw instantly.
+                Currently, I am actively seeking new challenges to deploy my skills in the real world.
+            </p>
+            <a href="#contact" class="btn">Download CV</a>
+        </div>
+
+        <div class="hero-image">
+            <!-- Placeholder image URL. You should replace this with your actual file path or URL -->
+            <img src="content0.png" alt="Abida at Construction Site">
+        </div>
+    </header>
+
+    <section class="skills-section" id="skills">
+        <h2>Core Competencies</h2>
+        <p>From the digital realm of Genshin Impact to the physical reality of construction sites.</p>
+
+        <div class="skills-grid">
+            <div class="skill-tag">League of Legends (Emerald)</div>
+            <div class="skill-tag">World of Secrets in arabic expert level</div>
+            <div class="skill-tag">Genshin Impact ex Master</div>
+            <div class="skill-tag">Mechanics (BAC+3)</div>
+            <div class="skill-tag">Skins Expert</div>
+            <div class="skill-tag">love working outside</div>
+            <div class="skill-tag">Laser Sharp Elite Eyes </div>
+            <div class="skill-tag">Multi-Lingual (Arabic, English, French, German, Italian)</div>
+            <div class="skill-tag">So Soft</div>
+            <div class="skill-tag">PremoJaj Digger</div>
+            <div class="skill-tag">Many more features</div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Ready to collaborate?</h2>
+        <p>I am currently looking for a job where I can utilize my expertise in mechanics, languages, and strategic gaming.</p>
+        <br>
+        <a href="mailto:email@example.com" class="btn" style="background: white; color: var(--secondary); border-color: white;">Contact Me</a>
+    </section>
+
+    <footer>
+        &copy; 2023 Abida Bondou9. All rights reserved.
+    </footer>
+
+</body>
+</html>
